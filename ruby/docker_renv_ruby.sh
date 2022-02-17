@@ -110,7 +110,6 @@ echo "If you use docker image please type"
 echo "docker run -it --rm \\"
 echo "           --mount type=bind,source=${PWD}/data,destination=/home/${USERNAME}/data \\"
 echo "           --mount type=bind,source=${PWD}/conf/.ssh,destination=/home/${USERNAME}/.ssh \\"
-echo "           --mount type=bind,source=${PWD}/ruby,destination=/home/${USERNAME}/ruby \\"
-echo "           --mount type=bind,source=${PWD}/rbenv,destination=/home/${USERNAME}/rbenv  ${IMAGENAME}:${IMAGETAG}"
+echo "           ${IMAGENAME}:${IMAGETAG}"
 figlet "Thank you!"
 
